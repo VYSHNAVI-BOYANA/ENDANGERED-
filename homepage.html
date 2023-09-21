@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>homepage</title>
+</head>
+
+<body>
+    <header id="header">
+        <img src="Ecoforest-Logo.png" class="logo">
+        <ul>
+            <li> <a href="#" class="active">Home</a></li>
+            <li> <a href="ab.html">About</a></li>
+            
+            <li> <a href="login.html">Login</a></li>
+            <li> <a href="contact.html">Contact us</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time to</span><br>Save together</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+        
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+    </section>
+    <div class="sec">
+        <div class="head">
+            <h1>ENDANGERED SPECIES</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="card">
+                <div class="content">
+                    <div class="imgbox">
+                        <img src="image/image/an1.jpeg" alt="animals">
+                    </div>
+                    <div class="contentbox">
+                        <h3>ENDANGERED <span>ANIMALS</span></h3>
+                        <p>Don't let them vanish-protect them</p>
+                    </div>
+                    <a href="info.html"><span>Learn more</span></a>
+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="content">
+                    <div class="imgbox">
+                        <img src="image/image/birf.jpeg" alt="birds">
+                    </div>
+                    <div class="contentbox">
+                        <h3>ENDANGERED <span>BIRDS</span></h3>
+                        <p>Don't let them vanish-protect them</p>
+
+                    </div>
+                    <a href="birds.html" ><span>Learn more</span></a>
+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="content">
+                    <div class="imgbox">
+                        <img src="image/image/aqua.jpeg" alt="aquatic">
+                    </div>
+                    <div class="contentbox">
+                        <h3>ENDANGERED <span>AQUATIC LIFE</span></h3>
+                        <p>Don't let them vanish-protect them</p>
+
+                    </div>
+                   <a href="aquatic.html" ><span>Learn more</span></a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+
+        })
+    </script>
+
+</body>
+
+</html>

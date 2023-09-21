@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif&family=Open+Sans:ital,wght@1,300&family=Playfair:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif&family=Open+Sans:ital,wght@1,300&family=Playfair:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Playfair;
+}
+body
+{
+  overflow-x: hidden;
+  background: #fff;
+  min-height: 100vh;
+  
+}
+#header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+
+}
+#header .logo
+{
+    max-width: 18%;
+    height: auto;
+}
+#header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+#header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+    border-radius: 30px;
+    font-weight: 600;
+}
+#header ul li a:hover,
+#header ul li a.active
+{
+    background: #094b65;
+    color: #fff;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #094b65,transparent);
+    z-index: 10;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+section #text
+{
+    position: absolute;
+    color: #094b65;
+    font-size: 60px;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho',cursive;
+    transform: translateY(-50%);
+
+}
+section #text span
+{
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Playfair',sans-serif;
+    
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: #fff;
+    color: #094b65;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+}
+.sec
+{
+    position:relative;
+    padding: 80px;
+    background: #094b65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.sec .head h1
+{
+    font-size: 3.5em;
+    color: #fff;
+   
+}
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+
+
+}
+ .sec .container{
+    position: relative;
+    display: flex;
+    margin: 40px 0;
+   justify-content: center;
+   align-items: center;
+    flex-direction: row;
+   
+}
+.sec   .container .card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: rgba(255,255,255,0.03);
+    margin: 20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.4) ;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   backdrop-filter: blur(10px);
+   border-style: solid;
+   border-color: #fcd5ce;
+   border-width: 1px;
+
+}
+.sec .container .card .content{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.sec .container .card .content .imgbox{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top:25px ;
+    border-radius: 50%;
+    overflow: hidden;
+    border:3px solid #fcd5ce ;
+}
+.sec .container .card .content .imgbox img{
+
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+.sec .container .card .content .contentbox h3{
+    color: #fff;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+.sec .container .card .content .contentbox h3 span{
+    color: red;
+}
+
+
+.sec .container .card .content .contentbox p{
+    color: #fff;
+    text-align: center;
+    margin: 2px 0 10px;
+
+}
+.sec .container .card .content a{
+
+    height: 32px;
+    width:130px;
+    border-style: none;
+    border-radius: 5px;
+    background: #fcd5ce;        
+     
+    margin-top:10px;
+    text-decoration: none;
+    text-align: center;
+    
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .4s ease-in;
+}
+.sec .container .card .content a:hover{
+    background-color: red;
+    box-shadow:0px 0px 5px red,0px 0px 5px red;
+
+}
+.sec .container .card .content a span{
+    color: black;
+}
